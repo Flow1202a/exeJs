@@ -25,5 +25,6 @@
         "cerise",
     ];
 
+    fruits.forEach(fruit => console.log(fruit));
     // your code here
 })();

@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+    document.addEventListener("DOMContentLoaded", () => {
+        // Récupérer l'élément avec l'ID "source"
+        const sourceElement = document.getElementById("source");
+
+        // Récupérer la valeur de l'attribut "data-image"
+        const imageUrl = sourceElement.getAttribute("data-image");
+
+        // Créer une nouvelle balise <img>
+        const imgElement = document.createElement("img");
+        imgElement.src = imageUrl;
+
+        // Ajouter la balise <img> à la balise avec l'ID "target"
+        const targetElement = document.getElementById("target");
+        targetElement.appendChild(imgElement);
+
+        // Supprimer la balise "source"
+        sourceElement.remove();
+    });
 })();

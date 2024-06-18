@@ -25,5 +25,10 @@
         "cerise",
     ];
 
+    for (let i = 0; i < fruits.length; i++) {
+        if (fruits[i] === "pomme"){
+            console.log("il y a une pomme")
+        }
+    }
     // your code here
 })();

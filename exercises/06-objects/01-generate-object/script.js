@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
+    const person = {
+        lastname: "Dupont",
+        firstname: "Jean",
+        age: 30,
+        city: "Paris",
+        country: "France"
+    };
+
+// Affichage de l'objet dans la console
+    console.log(person);
 })();

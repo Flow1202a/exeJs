@@ -11,4 +11,26 @@
 
 (() => {
     // your code here
+    class Person {
+        constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+        // Méthode sayHello qui retourne une chaîne de salutation
+        sayHello() {
+            return `Hello, ${this.firstname} ${this.lastname}!`;
+        }
+    }
+
+    // Gestionnaire d'événement pour le clic sur le bouton
+    document.getElementById("run").addEventListener("click", () => {
+        // Créer une instance de la classe Person
+        const person = new Person("John", "Doe");
+
+        // Afficher la valeur de retour de la méthode sayHello dans la console
+        alert(person.sayHello());
+    });
+
+
 })();

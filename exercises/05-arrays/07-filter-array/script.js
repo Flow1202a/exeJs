@@ -88,5 +88,21 @@
         },
     ];
 
+    for (let i = 0; i <people.length; i++) {
+        var majeur = [];
+        if (people[i].age > 18){
+            var j = 0;
+            majeur[j] = (people[i].firstname);
+            j++;
+        }
+    }
+
+    for (let i = 0; i < people.length; i++) {
+        console.log(majeur[i])
+    }
+            
+        
+    
+
     // your code here
 })();

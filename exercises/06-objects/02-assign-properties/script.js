@@ -26,5 +26,11 @@
         os: "linux",
         user: null,
     };
-    // your code here
+
+        const completeComputers = computers.map(computer => {
+            return {...defaultProps, ...computer};
+        });
+
+        console.log(completeComputers);
+;// your code here
 })();

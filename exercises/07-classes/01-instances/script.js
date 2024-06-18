@@ -17,4 +17,9 @@
         }
     }
     // your code here
+    const skytty = new Cat("Skitty",9);
+    const pixel = new Cat("Pixel",6);
+
+    alert(pixel)
+    alert(skytty.name)
 })();

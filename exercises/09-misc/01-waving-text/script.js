@@ -11,4 +11,11 @@
 
 (() => {
     // your code here
+    const text = document.querySelector(".target");
+    text.innerHTML = text.textContent.replace(/\s/g, "<span>$&</span>");
+
+    const element = document.querySelectorAll("span")
+    for (let i = 0; i < element.length; i++) {
+        element[i].style.animationDelay = i*0.05 + 's';
+    }
 })();

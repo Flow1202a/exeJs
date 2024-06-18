@@ -87,6 +87,17 @@
             email: "gkeatche@google.fr",
         },
     ];
+    const findPerson = (firstName, lastName) => {
+        for (let i = 0; i < people.length; i++) {
+            if (people[i].firstname === firstName && people[i].lastname === lastName) {
+                console.log("Email:", people[i].email);
+                console.log("Index:", i);
+                return;
+            }
+        }
+        console.log("Person not found");
+    };
 
+    findPerson("florian", "aliu");
     // your code here
 })();
